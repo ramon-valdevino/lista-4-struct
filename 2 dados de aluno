@@ -1,0 +1,12 @@
+/* Criar um registro chamado DadosAluno, que armazena o nome e a idade de um aluno.
+Na função principal: criar uma variável que é uma estrutura DadosAluno; ler o nome e a idade
+de um aluno e armazenar na variável criada; exibir na tela o nome do aluno e a idade do
+aluno. */
+/*
+struct DadosAluno
+{
+  char nome[50];
+  int idade;
+};
+int main(){
+  struct DadosAluno info ;
