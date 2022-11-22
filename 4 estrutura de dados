@@ -1,0 +1,45 @@
+/* Defina uma estrutura em C para armazenar dados de um veículo (Marca, modelo, cor,
+volume de portas, motorização), crie uma função para armazenar os dados de 10
+veículos, outra para mostrar os dados armazenados, a função main() deve um conter
+pequeno menu para chamar as funções criadas. */ 
+
+{
+char marca[30],modelo[50],cor[30],motorizacao[50];
+int portas;
+};
+int armazemDeDados(){
+  struct dados carro[10];
+  int eu;
+   para ( i = 0; i < 10; i++)
+   {
+    printf("Me forneca aa marca :");
+    fflush(stdin);
+    fgets(carro[i].marca,30,stdin);
+    printf("Me forneca aa modelo :");
+    fflush(stdin);
+    fgets(carro[i].modelo,50,stdin);
+    printf("Me forneca aa cor :");
+    fflush(stdin);
+    fgets(carro[i].cor,30,stdin);
+    printf("Me forneca aa motorizacao :");
+    fflush(stdin);
+    fgets(carro[i].motorizacao,50,stdin);
+    printf("Me fornecaa o numero de portas:");
+    scanf("%d",&carro[i].portas);
+   }
+   
+}
+int mostraDados(){
+  struct dados carro[10];
+  int eu;
+  
+  para ( i = 0; i < 10; i++)
+  {
+    
+  printf ("O carro %d\nmarca:%s\nmodelo:%s\ncor:%s\n,motorizacao;%s\nQuantidade de portas:%d",carro[i].marca,carro[i]. modelo,carro[i].cor,carro[i].motorizacao,carro[i].portas);
+  }
+  
+}
+int main(){
+  armazemDeDados();
+  mostraDados();
