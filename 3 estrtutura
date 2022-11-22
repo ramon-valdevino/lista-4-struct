@@ -1,0 +1,12 @@
+
+{
+  char a[10];
+  int b;
+};
+int main(){
+  struct exercicio num3;
+  printf("Me forneca uma string:");
+  fflush(stdin);
+  fgets(num3.a,10,stdin);
+  printf("Me forneca o inteiro");
+  scanf("%d",&num3.b);
